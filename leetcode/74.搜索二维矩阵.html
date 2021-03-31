@@ -26,7 +26,11 @@
             high = matrix.length - 1;
         while (low < high) {
             const mid = Math.floor((high - low + 1) / 2) + low;
+<<<<<<< HEAD
             if (matrix[mid][0] <= target) {
+=======
+            if (matrix[mid][0] < target) {
+>>>>>>> 6136477466329e42532f5b5e329b3c13edcbba65
                 low = mid;
             } else {
                 high = mid - 1;
