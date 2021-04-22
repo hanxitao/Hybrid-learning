@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .triangle {
+            width: 0;
+            border: 50px solid;
+            border-color: transparent transparent #ccc transparent;
+        } */
+        .dialog {
+            position: relative;
+            margin-top: 50px;
+            margin-left: 50px;
+            padding-left: 20px;
+            width: 300px;
+            line-height: 2;
+            background: lightblue;
+            color: #fff;
+        }
+        .dialog::before {
+            content: "";
+            position: absolute;
+            border: 8px solid transparent;
+            border-right-color: #ccc;
+            left: -16px;
+            top: calc(50% - 8px);
+        }
+    </style>
+</head>
+<body>
+    <div class="dialog">这是一个对话框</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .star {
+            width: 0;
+            height: 0;
+            position: relative;
+            margin: 200px auto;
+            transform: rotate(35deg);
+            border-width: 70px 100px;
+            border-style: solid;
+            border-color: transparent transparent red transparent;
+        }
+        .star::before {
+            content: "";
+            width: 0;
+            height: 0;
+            top: -128px;
+            left: -95px;
+            transform: rotate(-35deg);
+            position: absolute;
+            border-width: 80px 30px;
+            border-style: solid;
+            border-color: transparent transparent red transparent;
+        }
+        .star::after {
+            content: "";
+            width: 0;
+            height: 0;
+            top: -45px;
+            left: -140px;
+            transform: rotate(-70deg);
+            position: absolute;
+            border-width: 70px 100px;
+            border-style: solid;
+            border-color: transparent transparent red transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="star"></div>
+</body>
+</html>
